@@ -13,7 +13,8 @@
   "dependencies": {
     "babel-core": "^6.26.3",
     "nanocomponent": "^6.5.2",
-    "nanohtml": "^1.4.0"
+    "nanohtml": "^1.4.0",
+    "random-emoji": "^1.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
