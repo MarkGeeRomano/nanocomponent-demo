@@ -39,4 +39,4 @@ const styles = {
   emojiSpan: `padding: 0 10px;`
 }
 
-export default App
+export { App }
