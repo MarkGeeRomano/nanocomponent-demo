@@ -12,10 +12,18 @@ document.body.appendChild(root)
 // const rerenderComponent = new components.RerenderComponent
 // root.appendChild(rerenderComponent.render())
 
-//***** LoadComponent component
+//***** Load component
 // const loadComponent = new components.LoadComponent
 // root.appendChild(loadComponent.render())
 
-//***** UnloadComponent component
-const unloadComponent = new components.UnloadComponent
-root.appendChild(unloadComponent.render())
+//***** Unload component
+// const unloadComponent = new components.UnloadComponent
+// root.appendChild(unloadComponent.render())
+
+//***** Update component
+// const updateComponent = new components.UpdateComponent
+// root.appendChild(updateComponent.render())
+
+//***** Emoji app 5000
+const app = new components.App
+root.appendChild(app.render())
