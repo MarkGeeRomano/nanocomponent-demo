@@ -24,6 +24,10 @@ document.body.appendChild(root)
 // const updateComponent = new components.UpdateComponent
 // root.appendChild(updateComponent.render())
 
+//Animate component
+const animateComponent = new components.Animate
+root.appendChild(animateComponent.render())
+
 //***** Emoji app 5000
-const app = new components.App
-root.appendChild(app.render())
+// const app = new components.App
+// root.appendChild(app.render())
