@@ -5,14 +5,14 @@ const root = document.createElement('div')
 document.body.appendChild(root)
 
 //***** Basic component
-const basicComponent = new components.BasicComponent
-const renderedComponent = basicComponent.render()
-console.log(renderedComponent)
-root.appendChild(renderedComponent)
+// const basicComponent = new components.BasicComponent
+// const renderedComponent = basicComponent.render()
+// console.log(renderedComponent)
+// root.appendChild(renderedComponent)
 
 //***** Rerender component
-// const rerenderComponent = new components.RerenderComponent
-// root.appendChild(rerenderComponent.render())
+const rerenderComponent = new components.RerenderComponent
+root.appendChild(rerenderComponent.render())
 
 //***** Load component
 // const loadComponent = new components.LoadComponent

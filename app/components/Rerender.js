@@ -2,17 +2,17 @@ import Nanocomponent from 'nanocomponent'
 import html from 'nanohtml'
 
 class RerenderComponent extends Nanocomponent {
-  state = { count: '🐈 ' }
+  state = { cats: '🐈 ' }
   
   onClick = () => {
-    this.state.count += '🐈 '
+    this.state.cats += '🐈 '
     this.rerender()
   }
 
   createElement() {
     return (html`
       <div>
-        <div style="font-size: 40px;">${this.state.count}</div>
+        <div style="font-size: 40px;">${this.state.cats}</div>
         <button onclick=${this.onClick}>click me</button>
       </div>
     `)
