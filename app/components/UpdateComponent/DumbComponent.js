@@ -4,16 +4,14 @@ import html from 'nanohtml'
 class Dumb extends Nanocomponent {
   props = { emoji: ''}
 
-  update = (newProps) => {
-    if (newProps.emoji !== this.props.emoji) {
-      Object.assign(this.props, newProps)
-      return true
-    }
-    return false
+  update = (props) => {
+    const [{ emoji: oldEmoji }] = this._arguments
+    return props.emoji !== oldEmoji
   }
 
+  // update = () => true
+
   createElement({ emoji, index, changeEmoji }) {
-    emoji = emoji || this.props.emoji
     return (html`
       <span style="cursor: pointer;" onclick=${() => changeEmoji(index)}>${emoji.repeat(10)}</span>
     `)

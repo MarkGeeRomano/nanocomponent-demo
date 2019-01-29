@@ -34,7 +34,6 @@ class UpdateComponent extends Nanocomponent {
     const { changeEmoji, state } = this
     return (html`
       <div style="width: 100%; border: 1px solid;">
-        <button onclick=${this.makeRandoEmoji}>click meh</button>
         ${state.emojiList.length 
           ? html`
             <div>

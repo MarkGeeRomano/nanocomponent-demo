@@ -6,11 +6,12 @@ document.body.appendChild(root)
 
 //***** Basic component
 // const basicComponent = new components.BasicComponent
-// root.appendChild(basicComponent.render())
+// const renderedCompy = basicComponent.render()
+// root.appendChild(renderedCompy)
 
 //***** Rerender component
-// const rerenderComponent = new components.RerenderComponent
-// root.appendChild(rerenderComponent.render())
+const rerenderComponent = new components.RerenderComponent
+root.appendChild(rerenderComponent.render())
 
 //***** Load component
 // const loadComponent = new components.LoadComponent
@@ -25,8 +26,8 @@ document.body.appendChild(root)
 // root.appendChild(updateComponent.render())
 
 //Animate component
-const animateComponent = new components.Animate
-root.appendChild(animateComponent.render())
+// const animateComponent = new components.Animate
+// root.appendChild(animateComponent.render())
 
 //***** Emoji app 5000
 // const app = new components.App

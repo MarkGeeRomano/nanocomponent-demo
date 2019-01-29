@@ -26,9 +26,7 @@ class UnloadComponent extends Nanocomponent {
             Emoji Screen
           </a>
         </div>
-        ${state.view === 'default'
-          ? children.default
-          : children.emoji.render()}
+        ${state.view === 'default' ? children.default : children.emoji.render()}
       </div>
     `)
   }

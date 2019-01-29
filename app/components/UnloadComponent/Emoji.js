@@ -9,14 +9,13 @@ class Emoji extends Nanocomponent {
     this.timer = setInterval(() => {
       const [emoji] = randomEmoji.random({ count: 1 })
       this.state.emoji = emoji.character
-      console.log(this.state.emoji)
       this.rerender()
     }, 1000)
   }
 
-  // unload = () => {
-    // clearInterval(this.timer)
-  // }
+  unload = () => {
+    clearInterval(this.timer)
+  }
 
   createElement() {
     return (html`
