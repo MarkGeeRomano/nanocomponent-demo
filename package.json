@@ -5,7 +5,7 @@
   "main": "app/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo app --live -- -t [ babelify ]"
+    "start": "./node_modules/.bin/budo app --live -- -t [ babelify ]"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +24,7 @@
     "@babel/preset-env": "^7.3.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-es2015": "^6.24.1",
-    "babelify": "^8.0.0"
+    "babelify": "^8.0.0",
+    "budo": "^11.6.0"
   }
 }
